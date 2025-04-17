@@ -1,45 +1,94 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    color: #333;
-  }
-  
-  .container {
-    max-width: 700px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .profile-img {
-    width: 120px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-  }
-  
-  h1 {
-    margin-bottom: 0.2rem;
-  }
-  
-  .links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #0366d6;
-  }
-  
-  .projects ul {
-    list-style: none;
-    padding-left: 0;
-    text-align: left;
-    margin-top: 1rem;
-  }
-  
-  .projects li {
-    margin-bottom: 0.5rem;
-  }
-  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #2b2c39;
+  --primary-color: #64ffda;
+  --secondary-color: #bb86fc;
+  --text-color: #e6f1ff;
+  --hover-color: #0097a7;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom colors for Tailwind */
+@layer utilities {
+  .bg-custom-bg { background-color: var(--bg-color); }
+  .text-custom-text { color: var(--text-color); }
+  .text-custom-primary { color: var(--primary-color); }
+  .text-custom-secondary { color: var(--secondary-color); }
+  .bg-custom-primary { background-color: var(--primary-color); }
+  .bg-custom-hover { background-color: var(--hover-color); }
+  .border-custom-primary { border-color: var(--primary-color); }
+  .border-custom-secondary { border-color: var(--secondary-color); }
+  .border-custom-text { border-color: var(--text-color); }
+}
+
+/* Typewriter */
+@keyframes type {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.animate-type {
+  animation: type 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
+  max-width: fit-content;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--primary-color); }
+}
+
+/* FadeIn animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in;
+}
+
+.white-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* .projectCard { 
+  background-color: #393b4d;
+  border-left: 4px solid #80669f;
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 20px;
+} */
+
+.projectCard { 
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-left 0.3s ease;
+}
+
+.projectCard:hover {
+  cursor: pointer;
+  background-color: #393b4d;
+  border-left: 4px solid #80669f;
+  color: var(--primary-color);
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  transform: scale(1.03);
+}
+
+
+
+
+.projectMain{
+  background-color: #e6f1ff;
+}

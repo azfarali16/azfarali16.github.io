@@ -3,28 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Azfar Ali | GitHub</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>Syed Azfar Ali | Data Scientist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
-<body>
-  <div class="container">
-    <img src="https://github.com/azfarali16.png" alt="Azfar Ali" class="profile-img"/>
-    <h1>Azfar Ali</h1>
-    <p>🌱 Developer | 💻 Tech Enthusiast | 🚀 Building cool stuff on GitHub</p>
+<body class="bg-custom-bg text-custom-text font-sans">
 
-    <div class="links">
-      <a href="https://github.com/azfarali16" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
-      <a href="mailto:youremail@example.com">Email</a>
+ <!-- Navbar -->
+ <nav class="bg-custom-bg py-4 fixed w-full top-0 z-50">
+  <div class="max-w-6xl mx-auto flex justify-center">
+    <ul class="flex space-x-10 text-lg font-semibold">
+      <li class="px-5"><a href="#" class="hover:text-custom-primary transition">Home</a></li>
+      <li class="px-5"><a href="#experience" class="hover:text-custom-primary transition">Experience</a></li> <!-- Added this line -->
+      <li class="px-5"><a href="#projects" class="hover:text-custom-primary transition">Projects</a></li>
+    </ul>
+  </div>
+</nav>
+  <!-- Main Content -->
+  <div class="pt-22 flex justify-center items-center min-h-screen px-4">
+    <div class="flex flex-col md:flex-row items-center max-w-6xl w-full space-y-10 md:space-y-0 md:space-x-10 animate-fadeIn">
+      
+      <!-- Left Section -->
+<div class="text-center md:text-left md:w-1/2 flex flex-col items-center md:items-start">
+  <div class="overflow-hidden border-r-2 border-custom-primary whitespace-nowrap animate-type mb-3">
+    <h1 class="text-4xl font-bold">Hi, I’m <span class="text-custom-secondary">Syed Azfar Ali</span></h1>
+  </div>
+  <h2 class="text-2xl"><span class="text-custom-primary font-bold">Data</span> <span>Scientist</span></h2>
+  <p class="mt-4 text-base font-light leading-relaxed">
+    Passionate about turning raw data into real-world impact. I build predictive models, automate data flows, and love scraping the unstructured mess into meaningful insights.
+  </p>
+  <div class="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
+    <a href="mailto:azfarali021.aa@gmail.com" class="bg-custom-primary text-black font-semibold px-5 py-2 rounded-full hover:bg-custom-hover transition">Get in Touch</a>
+    <a href="https://github.com/azfarali16" target="_blank" class="border border-custom-text px-5 py-2 rounded-full hover:bg-custom-text hover:text-custom-bg transition">Browse Projects</a>
+  </div>
+  <div class="flex flex-wrap gap-5 mt-6 justify-center md:justify-start">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-10 h-10 hover:-translate-y-1 transition" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-10 h-10 hover:-translate-y-1 transition" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="w-10 h-10 hover:-translate-y-1 transition" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="w-10 h-10 hover:-translate-y-1 transition" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-10 h-10 hover:-translate-y-1 transition" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" class="w-10 h-10 hover:-translate-y-1 transition" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="w-10 h-10 hover:-translate-y-1 transition white-icon" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" class="w-10 h-10 hover:-translate-y-1 transition" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" class="w-10 h-10 hover:-translate-y-1 transition" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-10 h-10 hover:-translate-y-1 transition" />
+  </div>
+  <div class="flex mt-4 space-x-4 justify-center md:justify-start text-xl">
+    <a href="https://linkedin.com/in/azfar-ali-saa0021" target="_blank"><i class="fab fa-linkedin hover:text-custom-primary transition"></i></a>
+    <a href="https://github.com/azfarali16" target="_blank"><i class="fab fa-github hover:text-custom-primary transition"></i></a>
+  </div>
+</div>
+
+      <!-- Right Section -->
+      <div class="md:w-1/2 flex justify-center items-center ">
+        <img src="pfp.jpg" alt="Profile Photo" class="w-72 h-72 object-cover border-4 border-custom-secondary p-1 shadow-lg rounded-full hover:scale-105 transition"/>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- Experience Section -->
+<div id="experience" class="py-16 bg-custom-bg text-custom-text">
+  
+  <div class="text-center">
+    <h2 class="text-4xl font-bold text-white mb-10 pb-2 inline-block border-b-2" style="border-color: var(--secondary-color);">
+      Experience
+    </h2>
+  </div>
+
+  <!-- Experience Container -->
+  <div class="max-w-6xl mx-auto px-6 w-full">
+    
+    <!-- Firstplanit - Data Engineer Intern -->
+    <div class="mb-8">
+      <h3 class="text-2xl font-bold text-custom-primary mb-2">Firstplanit - Data Engineer Intern</h3>
+      <p class="text-sm text-white mb-2">June 2022 - August 2022</p>
+      <ul class="list-disc pl-5 text-white">
+        <li>Worked with cross-functional teams to design methods for acquiring and validating eco-friendly product data from both structured and unstructured sources.</li>
+        <li>Designed and implemented scalable data management systems, including hands-on ETL processes to extract, transform, and load data.</li>
+        <li>Contributed to data quality assurance efforts and explored modern tools to enhance data systems, while supporting machine learning applications to improve data procurement.</li>
+      </ul>
     </div>
 
-    <section class="projects">
-      <h2>📂 Projects</h2>
-      <ul>
-        <li><a href="https://github.com/azfarali16/project-one">Project One</a> – A short description here.</li>
-        <li><a href="https://github.com/azfarali16/project-two">Project Two</a> – Another quick description.</li>
+    <!-- StaunchTie Innovations - Software Developer -->
+    <div class="mb-8">
+      <h3 class="text-2xl font-bold text-custom-primary mb-2">StaunchTie Innovations - Software Developer</h3>
+      <p class="text-sm text-white mb-2">January 2023 - Present</p>
+      <ul class="list-disc pl-5 text-white">
+        <li>Worked with cross-functional teams to design methods for acquiring and validating eco-friendly product data from both structured and unstructured sources.</li>
+        <li>Designed and implemented scalable data management systems, including hands-on ETL processes to extract, transform, and load data.</li>
+        <li>Contributed to data quality assurance efforts and explored modern tools to enhance data systems, while supporting machine learning applications to improve data procurement.</li>
       </ul>
-    </section>
+    </div>
+
   </div>
+</div>
+
+
+
+ <!-- Projects Section -->
+<div id="projects" class="py-16 bg-custom-bg text-custom-text">
+  
+  <div class="text-center">
+    <h2 class="text-4xl font-bold text-white mb-10 pb-2 inline-block border-b-2" style="border-color: var(--secondary-color);">
+      Projects
+    </h2>
+  </div>
+  
+  
+  <!-- Project Container -->
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 px-6 w-full">
+
+    <!-- Project 1: House Price Prediction Model -->
+    <a href="https://github.com/azfarali16/house-price-predictor" target="_blank" class="block w-full no-underline">
+      <div class="projectCard w-full rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer">
+        <h3 class="text-3xl font-bold text-white mb-3">House Price Prediction Model</h3>
+        <p class="mt-2 text-sm text-gray-300">
+          Trained and developed an end-to-end house price prediction system as a Flask web application using data scraped from the Zameen website. Focused on thorough data cleaning and preprocessing to ensure model accuracy. Achieved an R² score of 0.91 with a regression model, and deployed the solution with an interactive UI for real-time predictions.        </p>
+        <span class="inline-block mt-6 text-custom-hover font-semibold hover:text-white hover:underline transition">View Project</span>
+      </div>
+    </a>
+
+    <!-- Project 2: Email Header Phishing Detection -->
+    <a href="https://github.com/azfarali16/eml-header-phishing-detector" target="_blank" class="block w-full no-underline">
+      <div class="projectCard w-full rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer">
+        <h3 class="text-3xl font-bold text-white mb-3">Email Header Phishing Detection</h3>
+        <p class="mt-2 text-sm text-gray-300">
+          Built a phishing detection system for secure email classification to combat cyber threats. Cleaned and processed large-scale email datasets to remove noise and handle missing values. Trained an AI model and deployed it as a Python microservice with a RESTful API, integrated with a Node.js app.        </p>
+        <span class="inline-block mt-6 text-custom-hover font-semibold hover:text-white hover:underline transition">View Project</span>
+      </div>
+    </a>
+
+    <!-- Project 3: E-Store ETL Data Pipeline -->
+    <a href="https://github.com/azfarali16/estore-data-pipeline" target="_blank" class="block w-full no-underline">
+      <div class="projectCard w-full rounded-lg shadow-lg transform hover:scale-105 transition duration-300 cursor-pointer">
+        <h3 class="text-3xl font-bold text-white mb-3">E-Store ETL Data Pipeline</h3>
+        <p class="mt-2 text-sm text-gray-300">
+          Engineered a data warehouse solution for eStore to streamline sales analysis, inventory control, and supplier insights. Designed and implemented an ETL pipeline from Amazon RDS to MySQL using a star schema. Built a basic dashboard to visualize and track business performance.        </p>
+        <span class="inline-block mt-6 text-custom-hover font-semibold hover:text-white hover:underline transition">View Project</span>
+      </div>
+    </a>
+
+  </div>
+
+</div>
 </body>
 </html>
