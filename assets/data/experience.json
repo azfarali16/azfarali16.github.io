@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Firstplanit - Graduate Data Engineer",
+        "date": "May 2025 — Present",
+        "points": [
+            "Continued to develop data pipelines and improve data quality monitoring processes.",
+            "Collaborated with data scientists to optimize machine learning workflows.",
+            "Implemented automation to streamline data ingestion and transformation."
+        ]
+    },
+    {
+        "title": "Firstplanit - Data Engineer Intern",
+        "date": "Nov 2024 — May 2025",
+        "points": [
+            "Worked with cross-functional teams to design methods for acquiring and validating eco-friendly product data from both structured and unstructured sources.",
+            "Designed and implemented scalable data management systems, including hands-on ETL processes to extract, transform, and load data.",
+            "Contributed to data quality assurance efforts and explored modern tools to enhance data systems, while supporting machine learning applications to improve data procurement."
+        ]
+    },
+    {
+        "title": "StaunchTie Innovations - Software Developer",
+        "date": "Oct 2024 — Dec 2024",
+        "points": [
+            "Worked with cross-functional teams to design methods for acquiring and validating eco-friendly product data from both structured and unstructured sources.",
+            "Designed and implemented scalable data management systems, including hands-on ETL processes to extract, transform, and load data.",
+            "Contributed to data quality assurance efforts and explored modern tools to enhance data systems, while supporting machine learning applications to improve data procurement."
+        ]
+    }
+]

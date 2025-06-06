@@ -15,7 +15,6 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
 
-
 // testimonials variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
@@ -48,11 +47,6 @@ for (let i = 0; i < testimonialsItem.length; i++) {
   });
 
 }
-
-// add click event to modal close button
-// modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-// overlay.addEventListener("click", testimonialsModalFunc);
-
 
 
 // custom select variables
@@ -140,20 +134,83 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+navigationLinks.forEach((navLink) => {
+  navLink.addEventListener("click", () => {
+    const targetPage = navLink.textContent.trim().toLowerCase();
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
-    }
+    pages.forEach((page) => {
+      const isMatch = page.dataset.page === targetPage;
+      page.classList.toggle("active", isMatch);
+    });
 
+    navigationLinks.forEach((link) => {
+      const isActive = link === navLink;
+      link.classList.toggle("active", isActive);
+    });
+
+    window.scrollTo(0, 0);
   });
-}
+});
+
+
+// Dynamic content
+
+//Projects
+fetch('assets/data/projects.json')
+  .then(response => response.json())
+  .then(data => {
+    const projectList = document.getElementById('project-list');
+
+    data.forEach(project => {
+      const li = document.createElement('li');
+      li.className = 'project-item active';
+      li.setAttribute('data-filter-item', '');
+      li.setAttribute('data-category', project.dataCategory);
+
+      // Auto-build full image path
+      const imagePath = `assets/images/projects/${project.image}`;
+
+      li.innerHTML = `
+        <a href="${project.link}" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img src="${imagePath}" alt="${project.alt}" loading="lazy">
+          </figure>
+          <h3 class="project-title">${project.title}</h3>
+          <p class="project-category">${project.category}</p>
+        </a>
+      `;
+
+      projectList.appendChild(li);
+    });
+  })
+  .catch(error => console.error('Error loading projects:', error));
+
+
+
+  // Experiences
+  fetch('assets/data/experience.json')
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById('timeline-list');
+
+      data.forEach(exp => {
+        const li = document.createElement('li');
+        li.className = 'timeline-item';
+
+        // Build bullet points
+        const pointsHTML = exp.points.map(point => `<li>${point}</li>`).join('');
+
+        // Add content
+        li.innerHTML = `
+          <h4 class="h4 timeline-item-title">${exp.title}</h4>
+          <span>${exp.date}</span>
+          <ul class="timeline-text">${pointsHTML}</ul>
+        `;
+
+        container.appendChild(li);
+      });
+    })
+    .catch(err => console.error('Error loading experience:', err));

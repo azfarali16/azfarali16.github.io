@@ -1,0 +1,42 @@
+[
+  {
+    "title": "PhishTracer",
+    "category": "AI / Machine Learning",
+    "image": "phishtracer.png",
+    "alt": "phishtracer",
+    "link": "https://github.com/azfarali16/eml-header-phishing-detector",
+    "dataCategory": "AI"
+  },
+  {
+    "title": "ETL DataPipeline",
+    "category": "Data Engineer",
+    "image": "elt-datapipeline.png",
+    "alt": "elt-datapipeline",
+    "link": "https://github.com/azfarali16/estore-data-pipeline",
+    "dataCategory": "Data Engineer"
+  },
+  {
+    "title": "Product Review Sentiment Scraper",
+    "category": "AI / Machine Learning",
+    "image": "sentiment-scraper.jpg",
+    "alt": "product-review-sentiment-scraper",
+    "link": "https://github.com/azfarali16/product-review-sentiment",
+    "dataCategory": "AI"
+  },
+  {
+    "title": "Lead Sales AI Agent",
+    "category": "AI / Machine Learning",
+    "image": "lead-sales-ai-agent.jpg",
+    "alt": "lead-sales-ai-agent",
+    "link": "https://github.com/azfarali16/sales-agent",
+    "dataCategory": "AI"
+  },
+  {
+    "title": "Karachi House Price Predictor",
+    "category": "AI / Machine Learning",
+    "image": "house-price-predictor.png",
+    "alt": "house-price-predictor",
+    "link": "https://github.com/azfarali16/house-price-predictor",
+    "dataCategory": "AI"
+  }
+]
