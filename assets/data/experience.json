@@ -21,9 +21,10 @@
         "title": "StaunchTie Innovations - Software Developer",
         "date": "Oct 2024 — Dec 2024",
         "points": [
-            "Worked with cross-functional teams to design methods for acquiring and validating eco-friendly product data from both structured and unstructured sources.",
-            "Designed and implemented scalable data management systems, including hands-on ETL processes to extract, transform, and load data.",
-            "Contributed to data quality assurance efforts and explored modern tools to enhance data systems, while supporting machine learning applications to improve data procurement."
+            "Developed analytical dashboards using Dash and Plotly to visualize key data insights and simplify complex data interpretation.",
+            "Collaborated on frontend development and interface enhancements to improve user experience.",
+            "Implemented data visualization features to support business decision-making and performance tracking."
         ]
+
     }
 ]
